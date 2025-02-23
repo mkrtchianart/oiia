@@ -5,14 +5,20 @@ import { metadata } from "./metadata";
 
 export { metadata };
 
+const safeArea = {
+  paddingTop: `calc(var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top))`,
+  paddingBottom: `var(--tg-content-safe-area-inset-bottom)`,
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) 
+{
   return (
     <html lang="en">
-      <body className="pt-tg-header-height pb-tg-nav-height bg-green-700">
+      <body className="pt-tg-header-height pb-tg-nav-height bg-green-700" style={safeArea}>
         <SelectionPrevention />
         <WebAppProvider>
           <div className="sticky-wrap">

@@ -22,6 +22,9 @@ export function WebAppProvider({
         // Set background color
         WebApp.setBackgroundColor('#15803d');
 
+        // Set header color
+        WebApp.setHeaderColor('#15803d');
+
         // Lock orientation to portrait mode
         WebApp.lockOrientation();
 

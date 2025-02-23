@@ -41,6 +41,11 @@ export default function Home() {
     setIsSpinning(true);
   };
 
+  const safeArea = {
+    paddingTop: `calc(var(--tg-content-safe-area-inset-top) + var(--tg-safe-area-inset-top))`,
+    paddingBottom: `var(--tg-content-safe-area-inset-bottom)`,
+  }  
+
   const handlePointerUpOrLeave = () => {
     if (audioRef.current) {
       audioRef.current.pause();
@@ -50,7 +55,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center content-center h-full">
+    <div className="flex flex-col justify-center items-center content-center h-full" style={safeArea}>
       <Header />
       <div className="relative w-full flex flex-col items-center justify-center">
         <div

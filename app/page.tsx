@@ -72,6 +72,7 @@ export default function Home() {
             className="w-full h-auto object-contain"
             priority
           />
+          <div className="absolute inset-0 w-full h-full" onContextMenu={(e) => e.preventDefault()} />
           {!isSpinning && (
             <div className="hint absolute left-1/2 bottom-8 -translate-x-1/2 flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200">
               <Pointer className="w-5 h-5" />

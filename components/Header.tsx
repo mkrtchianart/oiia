@@ -25,7 +25,7 @@ export function Header() {
       <header className="w-full px-6 py-4 flex flex-col justify-between items-center bg-transparent">
         <h1 className="text-white text-4xl font-bold drop-shadow-lg [text-shadow:_2px_2px_0_#AC85F0,_-2px_-2px_0_#AC85F0,_2px_-2px_0_#AC85F0,_-2px_2px_0_#AC85F0]" style={{ animation: 'spin 3s infinite ease-in-out' }}>$OIIAI</h1>
         <div className="py-4">
-          <Link href="https://t.me/blum/app?startapp=memepadjetton_OIIAI_Yrl72-ref_3zVqRdIWxc" target="_blank" rel="noopener noreferrer">
+          <Link href="https://t.me/blum/app?startapp=memepadjetton_OIIAI_DT6sV-ref_3zVqRdIWxc" target="_blank" rel="noopener noreferrer">
             <RetroButton variant="lime">
               <span className="flex items-center justify-center gap-2">
                 <span className="text-black text-lg font-semibold">BUY on</span>

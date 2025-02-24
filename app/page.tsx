@@ -80,8 +80,8 @@ export default function Home() {
           )}
           {isSpinning && (
             <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex items-center gap-4">
-              <span className="text-5xl font-bold text-white [text-shadow:_2px_2px_0_#AC85F0,_-2px_-2px_0_#AC85F0,_2px_-2px_0_#AC85F0,_-2px_2px_0_#AC85F0]">
-                SPINS: <span className="text-5xl">{spinCount}</span>
+              <span className="text-2xl font-bold text-white [text-shadow:_2px_2px_0_#AC85F0,_-2px_-2px_0_#AC85F0,_2px_-2px_0_#AC85F0,_-2px_2px_0_#AC85F0]">
+                SPINS: <span className="text-2xl">{spinCount}</span>
               </span>
             </div>
           )}
